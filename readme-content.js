@@ -41,8 +41,8 @@ const readmeGenerator = ({title, description,install, usage, constribution, lice
 
 
     ## Questions
-
-    -GitHub Profile: [${gitUserName}](https://github.com/${gitUserName})
+    
+    * GitHub Profile: [${gitUserName}](https://github.com/${gitUserName})
 
     If you have any additional questions contact me by email at ${email}
 
