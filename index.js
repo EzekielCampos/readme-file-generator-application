@@ -53,7 +53,9 @@ inquirer.prompt([
     },
 
     
-])
+]).then(response =>{
+    console.log(response);
+})
 
 
 // TODO: Create an array of questions for user input
