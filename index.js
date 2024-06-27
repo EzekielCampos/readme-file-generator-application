@@ -1,20 +1,24 @@
-
+// The file system module is include to perform a write to a file
 const fs = require("fs");
-
+// The inquirer module will help with CLI prompts to collected user's response
 const inquirer = require("inquirer")
 
+// Using desconstructing syntax the readmeGenerator function is avaiable to be called
 const {readmeGenerator} = require("./readme-content");
 
 
 function writeToFile(fileName, data) {
 
+    // Using the writeFile method this dynamically creates a README file with the string that is created by the readmeGenerator function
     fs.writeFile(`${fileName}.md`, readmeGenerator(data),(error)=>
         error ? console.error(error) : console.log('Success!'));
 
 }
 
-
-function init() {inquirer.prompt([
+// This function will initialize the CLI prompts when it is called and dynamically generate the README file
+function init() {
+    // Prompt method will give user prompts in the CLI and record the answers
+    inquirer.prompt([
     {
         type:"input",
         message:"Enter your projects title",
@@ -63,11 +67,12 @@ function init() {inquirer.prompt([
         name:"email",
     },
 
-    
+    // Once all the prompts have been answered they are condensed into an object in the response variable that can be accessed
 ]).then(response =>{
+    // Call the writeToFile function and pass the response variable to take the users answers and place them accordingly in the README file
     writeToFile("README",response);
 })
 }
 
-
+// This will intialize the CLI prompts for the user and dynamically create the README file
 init();

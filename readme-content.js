@@ -1,9 +1,9 @@
 
-
+// This function uses deconstructing syntax for the parameters so that the variables can be used in the function
 const readmeGenerator = ({title, description,install, usage, contribution, license, testInstruction,
     gitUserName, email
  }) =>{
-
+// Returns a string with all the content of a README and the parameters in the corresponding places to generate a new file 
     return `
 # ${title}
 
@@ -54,11 +54,8 @@ ${testInstruction}
 
 If you have any additional questions contact me by email at ${email}
 
-
-
 `
-
-
 }
 
+// Exports method allows the readmeGenerator function to be used in other files if needed
 module.exports = {readmeGenerator};
