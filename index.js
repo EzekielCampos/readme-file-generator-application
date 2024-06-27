@@ -2,6 +2,12 @@
 
 const inquirer = require("inquirer")
 
+const fs = require("fs");
+
+const {readmeGenerator} = require("./readme-content");
+
+
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -63,4 +69,4 @@ function init() {inquirer.prompt([
 }
 
 // Function call to initialize app
-init();
+// init();
