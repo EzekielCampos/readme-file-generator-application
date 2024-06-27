@@ -1,6 +1,6 @@
 
 
-const readmeGenerator = ({title, description,install, usage, constribution, license, testInstruction,
+const readmeGenerator = ({title, description,install, usage, contribution, license, testInstruction,
     gitUserName, email
  }) =>{
 
@@ -17,6 +17,7 @@ const readmeGenerator = ({title, description,install, usage, constribution, lice
 <br/>
 -[Usage](#usage)
 <br/>
+-[Contributing](#contributing)
 -[License](#license)
 <br/>
 -[Tests](#tests)
@@ -37,7 +38,7 @@ ${install}
 ${usage}
 ## Contributing
 
-${constribution}
+${contribution}
 ## License
 
 This repository is covered under the ${license} license
