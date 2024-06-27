@@ -5,50 +5,61 @@ const readmeGenerator = ({title, description,install, usage, constribution, lice
  }) =>{
 
     return `
-    # ${title}
+# ${title}
 
-    ![image]({https://img.shields.io/badge/${license} license-blue})
-
-    ## Table of Contents
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Tests](#tests)
-    -[Questions](#questions)
-
-    ## Description
-
-    ${description}
-
-    ## Installation
-
-    ${install}
-
-    ## Usage
-
-    ${usage}
-    ## Contributing
-
-    ${constribution}
-    ## License
-
-    This repository is covered under the ${license} license
-
-    ## Tests
-
-    ${testInstruction}
+[![License: ${license}](https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/65dd9eb5aaca434fac4f1c34_License-${license}-blue.svg)](/LICENSE)
 
 
-    ## Questions
-    
-    * GitHub Profile: [${gitUserName}](https://github.com/${gitUserName})
+## Table of Contents
+-[Description](#description)
+<br/>
+-[Installation](#installation)
+<br/>
 
-    If you have any additional questions contact me by email at ${email}
+-[Usage](#usage)
+<br/>
+
+-[License](#license)
+<br/>
+
+-[Tests](#tests)
+<br/>
+
+-[Questions](#questions)
+<br/>
+
+## Description
+
+${description}
+
+## Installation
+
+${install}
+
+## Usage
+
+${usage}
+## Contributing
+
+${constribution}
+## License
+
+This repository is covered under the ${license} license
+
+## Tests
+
+${testInstruction}
 
 
-        
-        `
+## Questions
+
+* GitHub Profile: [${gitUserName}](https://github.com/${gitUserName})
+
+If you have any additional questions contact me by email at ${email}
+
+
+
+`
 
 
 }
