@@ -15,16 +15,12 @@ const readmeGenerator = ({title, description,install, usage, constribution, lice
 <br/>
 -[Installation](#installation)
 <br/>
-
 -[Usage](#usage)
 <br/>
-
 -[License](#license)
 <br/>
-
 -[Tests](#tests)
 <br/>
-
 -[Questions](#questions)
 <br/>
 

@@ -1,24 +1,19 @@
-// TODO: Include packages needed for this application
-
-const inquirer = require("inquirer")
 
 const fs = require("fs");
+
+const inquirer = require("inquirer")
 
 const {readmeGenerator} = require("./readme-content");
 
 
-
-
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
 
     fs.writeFile(`${fileName}.md`, readmeGenerator(data),(error)=>
         error ? console.error(error) : console.log('Success!'));
 
 }
 
-// TODO: Create a function to initialize app
+
 function init() {inquirer.prompt([
     {
         type:"input",
@@ -71,9 +66,8 @@ function init() {inquirer.prompt([
     
 ]).then(response =>{
     writeToFile("README",response);
-    console.log(response);
 })
 }
 
-// Function call to initialize app
+
 init();
