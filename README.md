@@ -26,11 +26,11 @@ This project is an application that can help a user dynamically generate a READM
 
 ## Installation
 
-In order to use this application the user must have node installed in their local environment.  If you do not have node installed then go to node website for directions to install. Once node has been installed, go to the directory that holds this application and install the inquirer package to run the CLI prompts.  To do this run the command “npm i inquirer” to install this package.
+In order to use this application the user must have node installed in their local environment.  If you do not have node installed then go to node website for directions for installation. Once node has been installed, go to the directory that holds this application and install the inquirer package to run the CLI prompts.  To do this run the command “npm i inquirer” to install this package.
 
 ## Usage
 
-User can automatically generate a README file by answering a few prompts in the command line.  In order to do this go to the directory that holds the application.  Once there, open the terminal and type the command “node index.js” and press enter.  Upon doing that  answer the questions that are prompted, and once done the file will be created and placed into that directory
+User can automatically generate a README file by answering a few prompts in the command line.  In order to do this go to the directory that holds the application.  Once there, open the terminal and type the command “node index.js” and press enter.  Upon completion, answer the questions that are prompted. After the questions are all answered the file will be created and placed into that directory.
 ### Application Demo 
 [Video Link](https://drive.google.com/file/d/1LoYdYTM7hSnBke17cW3pHsg3QXn8Rher/view)
 
