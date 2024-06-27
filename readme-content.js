@@ -18,6 +18,7 @@ const readmeGenerator = ({title, description,install, usage, contribution, licen
 -[Usage](#usage)
 <br/>
 -[Contributing](#contributing)
+<br/>
 -[License](#license)
 <br/>
 -[Tests](#tests)
